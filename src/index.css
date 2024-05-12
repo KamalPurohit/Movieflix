@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 7.5px;
+  height: 7.5px;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00929a;
+  border-radius: 25px;
+}
+
+.serch::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 25px;
+}
+
+.tv_discover::after {
+  content: "  ";
+  position: absolute;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 18, 1) 0%,
+    rgba(63, 63, 63, 0) 50%,
+    rgba(18, 18, 18, 1) 100%
+  );
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 0;
+}
+
+
+
